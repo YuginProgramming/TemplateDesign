@@ -6,6 +6,9 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 
+import menImg from '../assets/men.png';
+import ok from '../assets/ok.png';
+
 export default class Home extends Component {
     render () {
         return (
@@ -15,24 +18,23 @@ export default class Home extends Component {
                     <h2 className="text-center m-4">I’m a digital designer Julian Mack</h2>
                     <CardGroup bg='dark' >
                         <Card className="m-3" border="success" text='primary'>
-                            <Card.Img
-                            variant="top"
-                            src='https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=600'>
-                            </Card.Img>
+                            
                         <Card.Body bg='dark'>
-                            <Card.Title>Developers</Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <Card.Title>digital designer</Card.Title>
+                            <Card.Text className="bg-success p-2 text-dark bg-opacity-10">
+                            <p>Date of Birth:     Aug 25, 1988</p>
+                            <p>Address:                Rosia Road 55, Gibraltar, UK</p>
+                            <p>E-mail:                  julian@mail.dot</p>
+                            <p>Phone:                 +38055500303</p>
                             </Card.Text>
-                            <Button variant="primary">About team</Button>
+                            <Button className="btn btn-warning">Download CV</Button>
                         </Card.Body>
                         </Card>
-                        
+
                         <Card className="m-3">
                             <Card.Img
                             variant="top"
-                            src='https://images.pexels.com/photos/3184421/pexels-photo-3184421.jpeg?auto=compress&cs=tinysrgb&w=600'>
+                            src={menImg}>
                             </Card.Img>
                         <Card.Body>
                             <Card.Title>Developers</Card.Title>
@@ -40,7 +42,7 @@ export default class Home extends Component {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </Card.Text>
-                            <Button variant="primary">About team</Button>
+                            
                         </Card.Body>
                         </Card>
                     </CardGroup>    
@@ -53,14 +55,11 @@ export default class Home extends Component {
                         <Col sm={9}>
                             <Tab.Content className="mt-3">
                                 <Tab.Pane eventKey='first'>
-                                    <img src='https://images04.nicepage.com/feature/511177/ru/create-any-website-with-powerful-website-builder-konstruktor-saytov.jpg'></img>
+                                    <img src={ok}></img>
                                     <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat. 
-                                    Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur.
+                                    <p>Build your website</p>
+                                        in record time
+                                        Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
                                     </p>
                                 </Tab.Pane>
                                 
