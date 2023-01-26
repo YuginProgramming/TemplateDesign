@@ -13,6 +13,7 @@ import Row from 'react-bootstrap/Row';
 import { BrowserRouter as Router,  Switch, Route, Link} from 'react-router-dom';
 
 import Home from '../Pages/Home';
+import Blog from '../Pages/Home';
 
 export default class Header extends Component { 
     render () {
@@ -49,6 +50,7 @@ export default class Header extends Component {
                 <Router>
                     <Switch>
                         <Route exact path='/' component={Home}></Route>
+                        <Route exact path='/' component={Blog}></Route>
                         
                     </Switch>
                 </Router>
